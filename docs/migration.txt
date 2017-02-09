@@ -1,0 +1,5 @@
+﻿enable-migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\EventMigrations
+
+add-migration -ConfigurationTypeName ZenithWebSite.Migrations.EventMigrations.Configuration "PInitialCreate"
+
+update-database -ConfigurationTypeName ZenithWebSite.Migrations.EventMigrations.Configuration

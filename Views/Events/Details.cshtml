@@ -1,0 +1,66 @@
+﻿@model ZenithWebSite.Models.Entity.Event
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Activity.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Activity.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eventFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eventFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eventTo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eventTo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.createEvent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.createEvent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.eventId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
